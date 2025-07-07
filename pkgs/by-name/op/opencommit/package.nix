@@ -7,16 +7,16 @@
 
 buildNpmPackage rec {
   pname = "opencommit";
-  version = "3.2.7";
+  version = "3.2.9";
 
   src = fetchFromGitHub {
     owner = "di-sukharev";
     repo = "opencommit";
     rev = "v${version}";
-    hash = "sha256-vmVOrNwUsgB3iBvO8QhpJfI2OO0Kb9ZthcAXVaQ2cBM=";
+    hash = "sha256-CXVOIkc73f6/gyqrn6tjj/I6we/XBDQoxUVUlX9PzRc=";
   };
 
-  npmDepsHash = "sha256-F19xbiZoIC2JA+3rLqJBbFZvs2XbAk94F2borp/7gMo=";
+  npmDepsHash = "sha256-Fu6i0nqK1osU5HYF7lz7AbWhAmLO9/JOMcpoe1qbb0w=";
 
   passthru.updateScript = nix-update-script { };
 
